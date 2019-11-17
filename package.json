@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "vuepress": "1.2.0",
+    "vuepress-plugin-comment": "^0.7.0",
     "vuepress-theme-reco": "1.1.1"
   },
   "description": ""

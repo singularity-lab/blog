@@ -9,7 +9,8 @@ heroImageStyle: {
   background: '#fff',
   borderRadius: '1rem',
 }
-isShowTitleInHome: false
+isShowTitleInHome: false,
+isShowComments: false,
 faceImage: /head.png
 actionText: Guide
 actionLink: /views/other/guide
