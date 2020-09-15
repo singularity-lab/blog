@@ -1,15 +1,15 @@
 {
-  "name": "vuepress_test",
-  "version": "1.0.0",
-  "author": "reco_luan",
-  "license": "MIT",
-  "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
-  },
-  "devDependencies": {
-    "vuepress": "1.2.0",
-    "vuepress-theme-reco": "1.1.1"
-  },
-  "description": ""
+    "name": "vuepress_test",
+    "version": "1.0.0",
+    "author": "reco_luan",
+    "license": "MIT",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "devDependencies": {
+        "vuepress": "^1.2.0",
+        "vuepress-theme-reco": "^1.1.1"
+    },
+    "description": ""
 }
