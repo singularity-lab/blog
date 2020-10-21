@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "JavaScript闭包"
+title: JavaScript闭包
 date: 2019-04-21
-author: "Hivol"
+author: Hivol
 categories:
     - 开发部
 tags:

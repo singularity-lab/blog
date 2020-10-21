@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Python 获取哔哩哔哩弹幕进行分析"
+title: Python 获取哔哩哔哩弹幕进行分析
 date: 2019-04-14
-author: "Hivol"
+author: Hivol
 categories:
     - 开发部
 tags:

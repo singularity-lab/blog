@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "JavaScript 类（Class）"
+title: JavaScript 类（Class）
 date: 2019-05-26
-author: "Hivol"
+author: Hivol
 categories:
     - 开发部
 tags:
