@@ -75,7 +75,7 @@ Step 2. Clone 你的仓库到你自己的电脑
 
 Step 3. 在本地仓库中编写你的文章，写完后 commit（ ⚠️ 注意：文章在 `docs/views/[dev/data/design]` 文件夹下，图片在 `imgs` 文件夹下）
 
-Step 5. 获取本项目最新内容，与本项目进行同步：
+Step 4. 获取本项目最新内容，与本项目进行同步：
 
 -   确认本地仓库中已设置好 upstream 为本项目地址（ `git remote -v` 查看），正常情况下与下图一致（"Hivol"应该是自己 GitHub 的用户名），如果没有请使用 `git remote add upstream https://github.com/singularity-lab/blog.git` 添加。
 
@@ -89,15 +89,13 @@ Step 5. 获取本项目最新内容，与本项目进行同步：
 
 -   执行命令 `git merge upstream/master` ，把本项目的最新内容合并到你的本地仓库的 master 分支（或你的默认分支下，如 gh-pages）中
 
--   执行命令 `git push` 把合并后的内容 push 到你的远程仓库 `nickname/Blog-Share`
+-   执行命令 `git push` 把合并后的内容 push 到你的远程仓库 `nickname/singularity-lab-blog`
 
-Step 5. Push all commits to `nickname/singularitylab-blog`
+Step 5. 提交一个 pull request，等待 review
 
-Step 6. 提交一个 pull request，等待 review
+Step 6. 关注自己的邮箱，若有收到修改要求请及时修改
 
-Step 7. 关注自己的邮箱，若有收到修改要求请及时修改
-
-Step 8. 合并完成
+Step 7. 合并完成
 
 ## 本地运行调试
 
