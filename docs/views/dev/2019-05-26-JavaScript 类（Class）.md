@@ -1,8 +1,8 @@
 ---
-layout:     post
-title:      "JavaScript 类（Class）"
-date:       2019-05-26
-author:     "李楸柯"
+layout: post
+title: "JavaScript 类（Class）"
+date: 2019-05-26
+author: "Hivol"
 categories:
     - 开发部
 tags:
@@ -11,7 +11,11 @@ tags:
     - ES6
 ---
 
+:::tip
 本文的标题是 JavaScript 类，准确地说，应该是 ES6 中的类。在 ES6 之前，是没有 `class` 这种面向对象的写法的。
+:::
+
+<!-- more -->
 
 ## ES6 之前的面向对象写法
 
@@ -19,7 +23,7 @@ tags:
 
 ```javascript
 function iPhone() {
-  this.price = "high";
+    this.price = "high";
 }
 
 var iphone1 = new iPhone();
@@ -30,16 +34,16 @@ alert(iphone1.price); // high
 如果想要实现"方法"（method），则需要使用 `prototype`，如：
 
 ```javascript
-iPhone.prototype.drop = function(){
-  alert("Broken");
-}
+iPhone.prototype.drop = function() {
+    alert("Broken");
+};
 ```
 
 若想要实现"继承"（inheritance）,也需要用到 `prototype`，如：
 
 ```javascript
 function iPhoneXR() {
-  this.cpu = "A12";
+    this.cpu = "A12";
 }
 
 iPhoneXR.prototype = new iPhone();
@@ -65,12 +69,12 @@ iPhoneXR1.drop(); // Broken
 ```javascript
 class iPhone {
     constructor() {
-    this.price = "high";
-  }
+        this.price = "high";
+    }
 
     drop() {
-    alert("Broken");
-  }
+        alert("Broken");
+    }
 }
 
 let iphone1 = new iPhone();
@@ -83,11 +87,11 @@ iphone1.drop(); // Broken
 
 ```javascript
 class iPhoneXR extends iPhone {
-  constructor(owner) {
-    super("high");
-    this.cpu = "A12";
-    this.owner = owner;
-  }
+    constructor(owner) {
+        super("high");
+        this.cpu = "A12";
+        this.owner = owner;
+    }
 }
 
 let iPhoneXR1 = new iPhoneXR("Jobs");
@@ -97,22 +101,22 @@ alert(iPhoneXR1.price); // high
 iPhoneXR1.drop(); // Broken
 ```
 
-此处的 `super('high')` 是在重写 `constructor()`  方法时所必需的写法，括号中的值为父类中属性的值。不写会报错。
+此处的 `super('high')` 是在重写 `constructor()` 方法时所必需的写法，括号中的值为父类中属性的值。不写会报错。
 
 与其他面向对象的语法一样，ES6 中的类也可以重写父类方法。如：
 
 ```javascript
 class iPhoneXR extends iPhone {
-  constructor(owner) {
-    super("high");
-    this.cpu = "A12";
-    this.owner = owner;
-  }
-  
-  drop() {
-    super.drop();
-    alert("Repaired!");
-  }
+    constructor(owner) {
+        super("high");
+        this.cpu = "A12";
+        this.owner = owner;
+    }
+
+    drop() {
+        super.drop();
+        alert("Repaired!");
+    }
 }
 
 let iPhoneXR1 = new iPhoneXR("Jobs");
@@ -129,4 +133,3 @@ iPhoneXR1.drop(); // Broken, Repaired!
 ## 参考资料
 
 1. [对象、类和继承](https://zh.javascript.info/object-oriented-programming)
-
