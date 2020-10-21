@@ -22,11 +22,11 @@
     title: JavaScript 异步
     date: 2019-05-05
     author: Hivol
-    categories: 
-    	- 开发部
+    categories:
+        - 开发部
     tags:
-    	- 前端 
-    	- JavaScript
+        - 前端
+        - JavaScript
     ---
     ```
 
@@ -45,12 +45,10 @@
        │   └── th
        └── 04
            ├── Hivol
-            ├── Mialia
+           ├── Mialia
            ├── iyin
            ├── lxy
-           ├── shuangmulin
-           ├── thang
-           └── walkerwy
+           └── shuangmulin
     ```
 
 4. Markdown 文件中引用图片时，请使用相对路径。一般为如： `../imgs/1903/04/Hivol/hello.png`
@@ -81,7 +79,7 @@ Step 5. 获取本项目最新内容，与本项目进行同步：
 
 -   确认本地仓库中已设置好 upstream 为本项目地址（ `git remote -v` 查看），正常情况下与下图一致（"Hivol"应该是自己 GitHub 的用户名），如果没有请使用 `git remote add upstream https://github.com/singularity-lab/blog.git` 添加。
 
-![readme-img1](docs/views/imgs/git_remote.png)
+    ![readme-img1](docs/views/imgs/git_remote.png)
 
 -   使用 `git status` 检查本地是否有未提交的修改，如果有，请先 commit 你的提交，并 push 到 上文提到的 `nickname/singularity-lab-blog`
 
