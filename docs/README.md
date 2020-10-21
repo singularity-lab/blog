@@ -11,6 +11,7 @@ heroImageStyle:
         borderRadius: "1rem",
     }
 isShowTitleInHome: false
+isShowComments: false
 faceImage: /head.png
 actionText: Guide
 actionLink: /views/other/guide

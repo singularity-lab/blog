@@ -71,6 +71,12 @@ module.exports = {
         heroImage: "/banner.jpg",
         heroText: null,
         startYear: "2018",
+        noFoundPageByTencent: false,
+        valineConfig: {
+            appId: "ltr1E9k9586OCn0HHCN3xQIb-gzGzoHsz", //
+            appKey: "1mwU6uPWFb01IUmeI7fIKHTM", // your appKey
+            meta: ["nick"],
+        },
     },
     markdown: {
         lineNumbers: true,
