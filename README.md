@@ -114,7 +114,7 @@ npm run dev
 npm run build
 ```
 
-（由于安装 vue-router 时会产生 bug，暂时未使用 yarn，详见 [vuepress/issues/2656](https://github.com/vuejs/vuepress/issues/2656)）
+（由于安装 vue-router 时会产生 bug，暂时未使用 yarn，详见 [vuepress/issues/2656](https://github.com/vuejs/vuepress/issues/2656#issuecomment-708890727)
 
 ## 转载须知
 
