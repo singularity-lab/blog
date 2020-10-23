@@ -1,5 +1,7 @@
 # SWUFE 奇点工作室学习博客交换站
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d58e035c-e6cf-4912-8fe7-82265d2d30ee/deploy-status)](https://app.netlify.com/sites/singularitylab/deploys)
+
 为切实提高工作室成员的学习积极性、涉猎宽度及思考的深度，从本学期开始，奇点工作室倡议每位成员 **每周至少完成一篇** 博客的写作及分享。涉及计算机基础理论、数学学习、数据分析、网站开发、网页设计、金融科技等等方面的学习经历和收获，也有相互之间的交流与讨论。当然，我们非常欢迎工作室之外的朋友们对我们的思考和学习笔记提出指正意见，也希望更多志同道合的朋友可以参与到我们这一次的尝试与努力中来，我们愿意相信，**一个人走得快，一群人走得远**，希望我们可以在柳湖旁一起建造一片 GEEK 之林！
 
 博客地址：[SWUFE 奇点工作室学习博客交换站](https://singularitylab.netlify.app/)
