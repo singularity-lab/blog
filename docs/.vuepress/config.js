@@ -81,4 +81,15 @@ module.exports = {
     markdown: {
         lineNumbers: true,
     },
+    plugins: [
+        [
+            "vuepress-plugin-mathjax",
+            {
+                target: "svg",
+                macros: {
+                    "*": "\\times",
+                },
+            },
+        ],
+    ],
 };
