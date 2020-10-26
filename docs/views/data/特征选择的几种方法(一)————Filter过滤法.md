@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 特征选择的几种方法(一)————Filter过滤法
+title: 2020-10-20特征选择的几种方法(一)————Filter过滤法
 date: 2020-10-20
 author: 宋佳
 categories:
