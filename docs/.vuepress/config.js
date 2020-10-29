@@ -48,7 +48,7 @@ module.exports = {
                     },
                     {
                         text: "GitHub",
-                        link: "https://github.com/",
+                        link: "https://github.com/singularity-lab/blog",
                         icon: "reco-github",
                     },
                 ],
