@@ -1,0 +1,7 @@
+# This file is used to automatically request reviews on PRs.
+
+/docs/views/data  @sjchasel
+
+/docs/views/design  @huangchengjing
+
+/docs/views/dev  @walkerwyl @LightLight22
