@@ -24,7 +24,7 @@ tags:
 
 3. 在原来的代码中，是在 IntSumReducer 类中来累计单词出现频率，用输出 sum表示，在修改时只需在此基础上建立 Stringbuilder 对象 s，再用 for 循环语句和 append 函数将数 字频率 sum转换成‘+’字符，输出<key,s>。此时输出的类型为 text。并注释掉主函数 中的 job.setCombinerClass(IntSumReducer.class)。
 
-4. 通过是否满足条件 Character.isLowerCase(s.charAt(0))来判断是否为小写字母打头的字 符串，如果是则返回 0，如果不是返回 1.
+4. 通过是否满足条件 Character.isLowerCase(s.charAt(0))来判断是否为小写字母打头的字 符串，如果是则返回 0，如果不是返回 1。
 
 
 ##代码如下
