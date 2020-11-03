@@ -151,4 +151,4 @@ var opacity = parseFloat(1);
 ```
 <br>
 
-![image-p1](../docs/views/imgs/2011/01/phl/p1.png)
+![image-p1](../imgs/2011/01/phl/p1.png)
