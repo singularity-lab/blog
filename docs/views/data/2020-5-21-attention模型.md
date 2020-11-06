@@ -3,7 +3,8 @@ layout: post
 title: Attention模型
 date: 2020-05-21
 author: 宋佳
-header-img: http://imgsrc.baidu.com/forum/pic/item/9a827d1ed21b0ef455db90dbd1c451da80cb3ec7.jpg
+categories:
+    - 数据分析部
 tags: 
     - 深度学习
     - 论文
