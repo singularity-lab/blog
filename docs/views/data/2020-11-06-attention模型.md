@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Attention模型
-date: 2020-05-21
+date: 2020-11-06
 author: 宋佳
 categories:
     - 数据分析部
