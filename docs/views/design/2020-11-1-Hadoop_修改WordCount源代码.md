@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hadoop_修改WordCount源代码
+title: 2020-11-1-Hadoop_修改WordCount源代码
 data: 2020-11-1
 author: Li_7
 categories:
