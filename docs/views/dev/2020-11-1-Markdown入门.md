@@ -33,8 +33,6 @@
 ##### 五级标题
 ###### 六级标题
 
-
-
 # Markdown段落篇
 
 ## 1.段落格式
@@ -139,7 +137,7 @@ Rabbit[^1]
 ## 7.注释
 
 ```
-方法1：<!--注释内容-->
+方法1：注释<!--注释内容-->
 方法2：Typora中，工具栏的格式选项中有“注释”功能。
 注意：当文件作为HTML在浏览器中打开时注释不会显示。
 ```
@@ -148,9 +146,9 @@ Rabbit[^1]
 
 -----
 
-<!--123-->
+注释<!--123-->
 
-<!---->
+注释<!---->
 
 # Markdown代码篇
 
@@ -204,9 +202,32 @@ int main(){
 }
 ```
 
+# 补充之HTML的标签使用<br>
 
+```
+不在Markdown涵盖内的标签，可以直接在文档中用HTML编写。
+1.Markdown无法对字体进行设置，但可以内嵌HTML标签实现设计文档中的字体、字号与颜色等。
+<center>居中</center>
+**<center>加粗居中</center>**
+<font face="微软雅黑">微软雅黑</font>;face="xx",则字体为xx
+<font Size=1>我是一号字</font>;Size=n,则输入n号字
+<font color=#008B8B>哈喽！</font>;颜色对应RGB中16进制
+2.Text<br>Text;有时候直接使用回车键换行编译器无法识别，就可以使用<br>或者<br/>标签。
+3.<kbd>键盘元素</kbd>；指示内联文本的一部分，该部分代表用户键盘输入，语音输入或者任何其他文本输入设备输入。
+4.<em>斜体显示</em>；用于强调句子或者短语中的特定文本，在浏览器中以斜体形式呈现。
+5.H<sub>2</sub>O;可用于表示数学或者化学公式，<sub>中的文本呈现的基数较低，并且文字比周围文字小。
+注意：更多HTML标签用法可查询“本文参考”第二个网站。
+```
 
-本文参考[RUNOOB.COM](https://www.runoob.com/markdown/md-tutorial.html)
+效果如下：
 
+---------------
 
+<center>居中</center>
+**<center>加粗居中</center>**<br>
+<font face="微软雅黑">微软雅黑</font><br>
+<font Size=1>我是一号字</font><br>
+<font color=#008B8B>哈喽！</font><br>
+
+本文参考[RUNOOB.COM](https://www.runoob.com/markdown/md-tutorial.html)&[HTML标签](https://www.lidihuo.com/html/html-tags-kbd.html)
 
