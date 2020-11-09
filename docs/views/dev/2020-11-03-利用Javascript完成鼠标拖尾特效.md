@@ -1,28 +1,29 @@
 ---
 layout: post
-title: 利用Javasript完成鼠标拖尾特效
+title: 利用JavaSript完成鼠标拖尾特效
 date: 2020-11-03
 author: 彭浩亮
 categories:
     - 开发部
 tags:
-    - Javascript
+    - JavaScript
+    - 前端
 ---
 
-在很多网站中，我们可以看到随着鼠标的移动，会生成许多的特效，今天就来分享一下如何利用Javascript来制作这种特效
+在很多网站中，我们可以看到随着鼠标的移动，会生成许多的特效，今天就来分享一下如何利用JavaScript来制作这种特效
 <br>
 
 # 思路流程
 <br>
 
-1. 利用Javascript动态生成`div`<br>
+1. 利用JavaScript动态生成`div`<br>
 2.  对该`div`进行样式设置
 3. 设定该元素对随机颜色
 4.  设定该元素生成一段时间后的自动消失消失效果
 
 <br>
 
-## 1.利用Javascript动态生成`div`，并对该`div`进行样式设置
+## 1.利用JavaScript动态生成`div`，并对该`div`进行样式设置
 <br>
 
 使用`window.onmousemove` ，当用户移动鼠标触发`function (event)`事件;<br>
