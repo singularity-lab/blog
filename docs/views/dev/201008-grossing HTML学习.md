@@ -1,12 +1,13 @@
 ---
-layout:post
-title:HTML学习  
-date:2020-10-30  
-author:grossing  
-categories:  
-    - 前端  
-tags:  
-    - HTML  
+layout:     post
+title:      HTML学习
+date:       2020-10-30
+author:     grossing
+categories:
+    - 开发部
+tags:
+    - 前端
+    - HTML
 ---
 
 
