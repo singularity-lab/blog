@@ -1,22 +1,18 @@
 ---
-layout:     post
-title:      HTML学习
-date:       2020-10-30
-author:     grossing
+layout: post
+title: HTML学习
+date: 2020-10-30
+author: grossing
 categories:
-    - 开发部
+  - 开发部
 tags:
-    - 前端
-    - HTML
+  - 前端
+  - HTML
 ---
 
+之前学习 JSP 时虽有使用 HTML 语言，但老师也只是让我们作为一个固定框架记住，没有讲解 HTML 的使用方法，以下是我本周学习的关于 HTML 标签的相关知识及应用。
 
-
-之前学习JSP时虽有使用HTML语言，但老师也只是让我们作为一个固定框架记住，没有讲解HTML的使用方法，以下是我本周学习的关于HTML标签的相关知识及应用。
-
-
-
-# HTML标签
+# HTML 标签
 
 - 标题
 
@@ -73,7 +69,7 @@ tags:
   <!-- 这是一个注释 -->
   ```
 
-- `<html>`标签：定义一个html文档。
+- `<html>`标签：定义一个 html 文档。
 
 - `<body>`标签：定义文档的主体。
 
@@ -86,12 +82,12 @@ tags:
   <meta charset="utf-8">
   <title>文档标题</title>
   </head>
-   
+
   <body>
   文档内容......
   </body>
-   
+
   </html>
   ```
 
-更多标签见[HTML参考手册](https://www.runoob.com/tags/ref-byfunc.html)
+更多标签见[HTML 参考手册](https://www.runoob.com/tags/ref-byfunc.html)

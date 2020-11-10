@@ -4,9 +4,9 @@ title: Python 获取哔哩哔哩弹幕进行分析
 date: 2019-04-14
 author: Hivol
 categories:
-    - 开发部
+  - 开发部
 tags:
-    - Python
+  - Python
 ---
 
 为了完成一个某课程的 research plan，本周写了一个获取 b 站弹幕并进行分析的小 demo。

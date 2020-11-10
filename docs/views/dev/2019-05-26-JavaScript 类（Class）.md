@@ -4,11 +4,11 @@ title: JavaScript 类（Class）
 date: 2019-05-26
 author: Hivol
 categories:
-    - 开发部
+  - 开发部
 tags:
-    - 前端
-    - JavaScript
-    - ES6
+  - 前端
+  - JavaScript
+  - ES6
 ---
 
 :::tip
@@ -23,7 +23,7 @@ tags:
 
 ```javascript
 function iPhone() {
-    this.price = "high";
+  this.price = "high";
 }
 
 var iphone1 = new iPhone();
@@ -35,7 +35,7 @@ alert(iphone1.price); // high
 
 ```javascript
 iPhone.prototype.drop = function() {
-    alert("Broken");
+  alert("Broken");
 };
 ```
 
@@ -43,7 +43,7 @@ iPhone.prototype.drop = function() {
 
 ```javascript
 function iPhoneXR() {
-    this.cpu = "A12";
+  this.cpu = "A12";
 }
 
 iPhoneXR.prototype = new iPhone();
@@ -68,13 +68,13 @@ iPhoneXR1.drop(); // Broken
 
 ```javascript
 class iPhone {
-    constructor() {
-        this.price = "high";
-    }
+  constructor() {
+    this.price = "high";
+  }
 
-    drop() {
-        alert("Broken");
-    }
+  drop() {
+    alert("Broken");
+  }
 }
 
 let iphone1 = new iPhone();
@@ -87,11 +87,11 @@ iphone1.drop(); // Broken
 
 ```javascript
 class iPhoneXR extends iPhone {
-    constructor(owner) {
-        super("high");
-        this.cpu = "A12";
-        this.owner = owner;
-    }
+  constructor(owner) {
+    super("high");
+    this.cpu = "A12";
+    this.owner = owner;
+  }
 }
 
 let iPhoneXR1 = new iPhoneXR("Jobs");
@@ -107,16 +107,16 @@ iPhoneXR1.drop(); // Broken
 
 ```javascript
 class iPhoneXR extends iPhone {
-    constructor(owner) {
-        super("high");
-        this.cpu = "A12";
-        this.owner = owner;
-    }
+  constructor(owner) {
+    super("high");
+    this.cpu = "A12";
+    this.owner = owner;
+  }
 
-    drop() {
-        super.drop();
-        alert("Repaired!");
-    }
+  drop() {
+    super.drop();
+    alert("Repaired!");
+  }
 }
 
 let iPhoneXR1 = new iPhoneXR("Jobs");

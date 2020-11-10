@@ -4,10 +4,10 @@ title: MatPlotLib 绘制二维数据散点图及密度热力图
 date: 2020-09-05
 author: Hivol
 categories:
-    - 开发部
+  - 开发部
 tags:
-    - Python
-    - Data Science
+  - Python
+  - Data Science
 ---
 
 本篇博客主要使用 Python 的 [MatPlotLib](https://matplotlib.org/) 绘制二维数据的散点图和密度热度图（Density Heatmaps）。
