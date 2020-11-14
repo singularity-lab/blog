@@ -4,10 +4,10 @@ title: JavaScript 回调
 date: 2019-04-28
 author: Hivol
 categories:
-    - 开发部
+  - 开发部
 tags:
-    - 前端
-    - JavaScript
+  - 前端
+  - JavaScript
 ---
 
 **回调函数**：通过引用提供给另一个函数调用的函数。
@@ -27,11 +27,11 @@ tags:
 
 ```javascript
 function doSomething(msg, callback) {
-    alert(msg);
-    if (typeof callback == "function") callback();
+  alert(msg);
+  if (typeof callback == "function") callback();
 }
 doSomething("回调函数", function() {
-    alert("匿名函数实现回调!");
+  alert("匿名函数实现回调!");
 });
 ```
 
@@ -47,7 +47,7 @@ JavaScript 的执行环境往往是在浏览器中，其任务也经常与调用
 
 ```javascript
 $.get("ajax/test.html", function(data) {
-    $("#box").html(data);
+  $("#box").html(data);
 });
 ```
 
@@ -60,15 +60,15 @@ $.get("ajax/test.html", function(data) {
 ```javascript
 // 排序
 function sort(parms, callback) {
-    var list = JSON.stringify(parms);
-    if (typeof callback == "function") {
-        callback(list);
-    }
+  var list = JSON.stringify(parms);
+  if (typeof callback == "function") {
+    callback(list);
+  }
 }
 
 // 冒泡排序
 function bubbleSort(arr) {
-    //处理数组
+  //处理数组
 }
 
 sort("[2, 1, 3]", bubbleSort);
@@ -80,7 +80,7 @@ sort("[2, 1, 3]", bubbleSort);
 
 ```javascript
 $("#myBtn").click(function() {
-    alert("click myBtn!");
+  alert("click myBtn!");
 });
 ```
 

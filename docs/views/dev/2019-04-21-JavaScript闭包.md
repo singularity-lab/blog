@@ -4,10 +4,10 @@ title: JavaScript闭包
 date: 2019-04-21
 author: Hivol
 categories:
-    - 开发部
+  - 开发部
 tags:
-    - 前端
-    - JavaScript
+  - 前端
+  - JavaScript
 ---
 
 **闭包**：函数和声明该函数的词法环境的组合，这个环境包含了这个闭包创建时所能访问的所有局部变量。
@@ -49,8 +49,8 @@ var f = function() {
 ```javascript
 outer = 2;
 function sample() {
-    var inner = 1;
-    console.log(outer);
+  var inner = 1;
+  console.log(outer);
 }
 sample(); // 2
 console.log(inner); // Undefined
@@ -62,12 +62,12 @@ console.log(inner); // Undefined
 
 ```javascript
 function game() {
-    var lives = 30;
-    function die() {
-        lives -= 1;
-        return lives;
-    }
-    return die;
+  var lives = 30;
+  function die() {
+    lives -= 1;
+    return lives;
+  }
+  return die;
 }
 var outer = game();
 console.log(outer());
