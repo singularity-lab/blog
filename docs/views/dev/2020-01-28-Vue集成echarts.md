@@ -4,23 +4,23 @@ title: Vue集成echarts
 date: 2020-01-28
 author: Cathandra
 categories:
-    - 开发部
+  - 开发部
 tags:
-    - Vue.js
-    - 前端
+  - Vue.js
+  - 前端
 ---
 
-归纳2种用法：  
+归纳 2 种用法：
 
-1. 直接使用原生echarts；
+1. 直接使用原生 echarts；
 
-2. 使用vue-echarts组件；
+2. 使用 vue-echarts 组件；
 
 <!-- More -->
 
-## 直接使用原生echarts
+## 直接使用原生 echarts
 
-### 安装echarts
+### 安装 echarts
 
 使用`npm`安装：
 
@@ -34,7 +34,7 @@ npm install echarts --save
 yarn add echarts
 ```
 
-### 引用echarts
+### 引用 echarts
 
 ```JavaScript
 var echarts = require('echarts');
@@ -49,7 +49,7 @@ require("echarts/lib/chart/line");
 
 ### 创建实例
 
-#### 在mounted()钩子方法中使用
+#### 在 mounted()钩子方法中使用
 
 ```JavaScript
 mounted() {
@@ -76,11 +76,11 @@ myChart.setOption({
 }
 ```
 
-#### 
+####
 
-## 使用vue-echarts组件
+## 使用 vue-echarts 组件
 
-### 安装vue-echarts
+### 安装 vue-echarts
 
 使用`npm`安装：
 
@@ -88,7 +88,7 @@ myChart.setOption({
 npm install echarts vue-echarts
 ```
 
-### 引用vue-echarts
+### 引用 vue-echarts
 
 ```JavaScript
 var echarts = require('echarts');
@@ -105,87 +105,86 @@ require("echarts/lib/chart/line");
 
 引用[官方文档](https://github.com/ecomfe/vue-echarts/blob/master/README.zh_CN.md#%E8%B0%83%E7%94%A8%E7%BB%84%E4%BB%B6)的例子：
 
->
->注册全局组件
->
+> 注册全局组件
+
 ```JavaScript
 Vue.component('v-chart', VueECharts);
 ```
->
->调用组件
->
+
+> 调用组件
+
 ```html
 <template>
-<v-chart :options="polar"/>
+  <v-chart :options="polar" />
 </template>
 
 <style>
-/**
+  /**
  * 默认尺寸为 600px×400px，如果想让图表响应尺寸变化，可以像下面这样
  * 把尺寸设为百分比值（同时请记得为容器设置尺寸）。
  */
-.echarts {
-  width: 100%;
-  height: 100%;
-}
+  .echarts {
+    width: 100%;
+    height: 100%;
+  }
 </style>
 
 <script>
-import ECharts from 'vue-echarts'
-import 'echarts/lib/chart/line'
-import 'echarts/lib/component/polar'
+  import ECharts from "vue-echarts";
+  import "echarts/lib/chart/line";
+  import "echarts/lib/component/polar";
 
-export default {
-  components: {
-    'v-chart': ECharts
-  },
-  data () {
-    let data = []
+  export default {
+    components: {
+      "v-chart": ECharts
+    },
+    data() {
+      let data = [];
 
-    for (let i = 0; i <= 360; i++) {
-        let t = i / 180 * Math.PI
-        let r = Math.sin(2 * t) * Math.cos(2 * t)
-        data.push([r, i])
-    }
-
-    return {
-      polar: {
-        title: {
-          text: '极坐标双数值轴'
-        },
-        legend: {
-          data: ['line']
-        },
-        polar: {
-          center: ['50%', '54%']
-        },
-        tooltip: {
-          trigger: 'axis',
-          axisPointer: {
-            type: 'cross'
-          }
-        },
-        angleAxis: {
-          type: 'value',
-          startAngle: 0
-        },
-        radiusAxis: {
-          min: 0
-        },
-        series: [
-          {
-            coordinateSystem: 'polar',
-            name: 'line',
-            type: 'line',
-            showSymbol: false,
-            data: data
-          }
-        ],
-        animationDuration: 2000
+      for (let i = 0; i <= 360; i++) {
+        let t = (i / 180) * Math.PI;
+        let r = Math.sin(2 * t) * Math.cos(2 * t);
+        data.push([r, i]);
       }
+
+      return {
+        polar: {
+          title: {
+            text: "极坐标双数值轴"
+          },
+          legend: {
+            data: ["line"]
+          },
+          polar: {
+            center: ["50%", "54%"]
+          },
+          tooltip: {
+            trigger: "axis",
+            axisPointer: {
+              type: "cross"
+            }
+          },
+          angleAxis: {
+            type: "value",
+            startAngle: 0
+          },
+          radiusAxis: {
+            min: 0
+          },
+          series: [
+            {
+              coordinateSystem: "polar",
+              name: "line",
+              type: "line",
+              showSymbol: false,
+              data: data
+            }
+          ],
+          animationDuration: 2000
+        }
+      };
     }
-  }
-}
+  };
 </script>
 >
 ```

@@ -4,10 +4,10 @@ title: JavaScript 异步
 date: 2019-05-05
 author: Hivol
 categories:
-    - 开发部
+  - 开发部
 tags:
-    - 前端
-    - JavaScript
+  - 前端
+  - JavaScript
 ---
 
 ## 什么是异步？
@@ -28,7 +28,7 @@ taskC();
 ```javascript
 taskA();
 ajax("url", function taskB() {
-    // 在未来某个时刻执行
+  // 在未来某个时刻执行
 });
 taskC();
 // 执行顺序 A => C => B
@@ -40,11 +40,11 @@ taskC();
 
 JavaScript 语言的执行环境是单线程（Single Thread）的，但是浏览器的内核是多线程的。一个浏览器通过有以下几个线程：
 
--   渲染引擎线程
--   JS 引擎线程
--   定时触发器线程
--   事件触发线程
--   异步 HTTP 请求线程
+- 渲染引擎线程
+- JS 引擎线程
+- 定时触发器线程
+- 事件触发线程
+- 异步 HTTP 请求线程
 
 JavaScript 程序就是在 JS 引擎线程中执行的，当遇到异步网络请求时，便转交给异步 HTTP 请求线程执行。
 
@@ -112,8 +112,8 @@ fetch('url1').then(function(){
 
 ```javascript
 async function f() {
-    var value = await timer(100);
-    return value;
+  var value = await timer(100);
+  return value;
 }
 
 f().then(alert); // done
@@ -125,18 +125,18 @@ f().then(alert); // done
 
 ```javascript
 var fetch = function(url) {
-    return new Promise(function(resolve, reject) {
-        ajax(url, resolve, reject);
-    });
+  return new Promise(function(resolve, reject) {
+    ajax(url, resolve, reject);
+  });
 };
 
 async function main() {
-    try {
-        var value = await fetch("url");
-        conosle.log(value);
-    } catch (err) {
-        console.error(err);
-    }
+  try {
+    var value = await fetch("url");
+    conosle.log(value);
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 main();
