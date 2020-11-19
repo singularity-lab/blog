@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 利用JavaSript完成鼠标拖尾特效
+title: 利用JavaScript完成鼠标拖尾特效
 date: 2020-11-03
 author: 彭浩亮
 categories:
