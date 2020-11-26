@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 利用JavaSript完成鼠标拖尾特效
+title: 利用JavaScript完成鼠标拖尾特效
 date: 2020-11-03
 author: 彭浩亮
 categories:
@@ -12,7 +12,7 @@ tags:
 
 在很多网站中，我们可以看到随着鼠标的移动，会生成许多的特效，今天就来分享一下如何利用 JavaScript 来制作这种特效
 <br>
-
+ 
 # 思路流程
 
 <br>
