@@ -33,6 +33,11 @@ module.exports = {
                 icon: "reco-date",
             },
             {
+                text: "RSS",
+                link: "https://singularitylab.netlify.app/rss.xml",
+                icon: "reco-rss",
+            },
+            {
                 text: "About",
                 link: "/about/",
                 icon: "reco-faq",
@@ -94,6 +99,13 @@ module.exports = {
                 macros: {
                     "*": "\\times",
                 },
+            },
+        ],
+        [
+            "@vuepress-reco/vuepress-plugin-rss",
+            {
+                site_url: "https://singularitylab.netlify.app",
+                copyright: "${$themeConfig.author}",
             },
         ],
     ],
