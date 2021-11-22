@@ -1,23 +1,19 @@
 ---
 layout: post
 title: JSP页面元素以及request对象
-data:2021-11-08
-author: Huangruoxin
+date: 2021-11-08
+author: 13safa
 categories:
-  -开发部
+  - 开发部
 tags:
-  -JSP
-  -https
-  -后端
-  -服务器
-​---
+  - JSP
+  - https
+  - 后端
+  - 服务器
+
 ---
 
-
-
-## JSP的页面元素
-
-
+# JSP的页面元素
 
 ### a.脚本Scriplet
 
@@ -60,9 +56,7 @@ tags:
 
 **jsp注释**	    <%-- --%>
 
-## JSP自带对象(自带的，不需要new也能使用的对象）
-
-
+#  JSP自带对象(自带的，不需要new也能使用的对象）
 
 **out:**输出对象，向客户端输出内容
 
@@ -101,8 +95,6 @@ tags:
 **page:**当前JSP页面对象(相当于JAVA的this)
 
 **exception:**异常对象
-
-
 
 ## 参考资料
 
