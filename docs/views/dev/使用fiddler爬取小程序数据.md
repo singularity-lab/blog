@@ -1,0 +1,30 @@
+# 使用fiddler爬取小程序数据
+
+----
+
+​	这两天试图帮人抢九价疫苗,发现用人工抢根本抢不到,便去Github上找了找相关的"外挂",同时也正好学习了一下如何使用fiddler爬取小程序数据.*(注:我这里仅尝试成功爬取pc端的小程序数据)*
+
+##  安装与配置:
+
+​	首先,要先去官网下载fiddler,链接是https://www.telerik.com/fiddler,我下的是**classic版**,因为是免费的.打开之后,一直点击next就安装成功了.然后打开fiddler,在**tools->Options**里完成如下设置:
+
+![img](file:///C:\Users\86133\AppData\Roaming\Tencent\Users\2508389223\QQ\WinTemp\RichOle\O}VTJMK`NHR4~6KU9{T`LHR.png)
+
+![img](file:///C:\Users\86133\AppData\Roaming\Tencent\Users\2508389223\QQ\WinTemp\RichOle\I13}S{KY}{[{$W$ML6_S]X7.png)
+
+![img](file:///C:\Users\86133\AppData\Roaming\Tencent\Users\2508389223\QQ\WinTemp\RichOle\JAJI[9%WI}]_N_D$C80@VWQ.png)
+
+## 爬取数据:
+
+​	在电脑上下载微信,并且保存微信的版本在**6.5.3以上**,因为只有6.5.3以上的版本才有小程序的功能.
+
+​	然后以知苗易约这个小程序为例,先打开fiiddler,然后打开知苗易约,可以看到如下
+
+![img](file:///C:\Users\86133\AppData\Roaming\Tencent\Users\2508389223\QQ\WinTemp\RichOle\G~}JFJPU0_M8N4Z0H5}MSJR.png)
+
+​	关于fiddler与微信小程序的接口怎么找,个人认为当你打开小程序的时候fiidler里面多弹出来的那几个活动挑个**Body**量大的几乎没差了,那么双击那个**url**,可以在右侧看到
+
+![img](file:///C:\Users\86133\AppData\Roaming\Tencent\Users\2508389223\QQ\WinTemp\RichOle\HYA~WT${4C1RU{D~AU{R%ER.png)
+
+​	这就是我们要爬取的数据了.
+
