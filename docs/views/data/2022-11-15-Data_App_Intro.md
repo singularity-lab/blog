@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Brief Introduction To Streamlit 
+title: Data_App_Intro
 date: 2022-11-05
 author: yhchen
 categories:
