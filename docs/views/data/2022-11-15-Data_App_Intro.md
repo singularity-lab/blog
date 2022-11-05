@@ -65,7 +65,7 @@ To make the app public, I deployed it on Streamlit cloud. You may need to creat 
 - Create a new repo in github, then paste the python file **app-diet1_2.py** into the repo and set it public
 - Add the dataset into the repo
 - Add a **requirements.txt** file which contains the packages use in the project, such as *matplotlib*
-- Commit the local changes and push the repo
+- Commit the local changes and push the commits to the origin remote
 
 ps: If you don't know how to do the steps above, please check other blogs about *GitHub*. 
 
